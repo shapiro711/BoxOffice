@@ -99,12 +99,10 @@
 		3FB02ABE26FEF5770006EA04 /* BoxOffice */ = {
 			isa = PBXGroup;
 			children = (
-				3FB02ABF26FEF5770006EA04 /* AppDelegate.swift */,
-				3FB02AC126FEF5770006EA04 /* SceneDelegate.swift */,
-				3FB02AC326FEF5770006EA04 /* ViewController.swift */,
-				3FB02AC526FEF5770006EA04 /* Main.storyboard */,
+				3FB02AF426FEF7060006EA04 /* Model */,
+				3FB02AF326FEF7000006EA04 /* Controller */,
+				3FB02AF226FEF6F10006EA04 /* View */,
 				3FB02AC826FEF57B0006EA04 /* Assets.xcassets */,
-				3FB02ACA26FEF57B0006EA04 /* LaunchScreen.storyboard */,
 				3FB02ACD26FEF57B0006EA04 /* Info.plist */,
 			);
 			path = BoxOffice;
@@ -126,6 +124,32 @@
 				3FB02AE326FEF57B0006EA04 /* Info.plist */,
 			);
 			path = BoxOfficeUITests;
+			sourceTree = "<group>";
+		};
+		3FB02AF226FEF6F10006EA04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3FB02AC526FEF5770006EA04 /* Main.storyboard */,
+				3FB02ACA26FEF57B0006EA04 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3FB02AF326FEF7000006EA04 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3FB02ABF26FEF5770006EA04 /* AppDelegate.swift */,
+				3FB02AC126FEF5770006EA04 /* SceneDelegate.swift */,
+				3FB02AC326FEF5770006EA04 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3FB02AF426FEF7060006EA04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
