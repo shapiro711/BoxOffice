@@ -14,6 +14,9 @@
 		3FB02ACC26FEF57B0006EA04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB02ACA26FEF57B0006EA04 /* LaunchScreen.storyboard */; };
 		3FB02AD726FEF57B0006EA04 /* BoxOfficeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB02AD626FEF57B0006EA04 /* BoxOfficeTests.swift */; };
 		3FB02AE226FEF57B0006EA04 /* BoxOfficeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB02AE126FEF57B0006EA04 /* BoxOfficeUITests.swift */; };
+		3FCE4E1626FEFEC500E49189 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E1526FEFEC500E49189 /* Movie.swift */; };
+		3FCE4E1E26FF00AD00E49189 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E1D26FF00AD00E49189 /* Comment.swift */; };
+		3FCE4E2326FF018200E49189 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E2226FF018200E49189 /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		3FB02ADD26FEF57B0006EA04 /* BoxOfficeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxOfficeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB02AE126FEF57B0006EA04 /* BoxOfficeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeUITests.swift; sourceTree = "<group>"; };
 		3FB02AE326FEF57B0006EA04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FCE4E1526FEFEC500E49189 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		3FCE4E1D26FF00AD00E49189 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		3FCE4E2226FF018200E49189 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +151,9 @@
 		3FB02AF426FEF7060006EA04 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3FCE4E1526FEFEC500E49189 /* Movie.swift */,
+				3FCE4E1D26FF00AD00E49189 /* Comment.swift */,
+				3FCE4E2226FF018200E49189 /* Response.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,8 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FCE4E1E26FF00AD00E49189 /* Comment.swift in Sources */,
 				3FB02AC426FEF5770006EA04 /* ViewController.swift in Sources */,
 				3FB02AC026FEF5770006EA04 /* AppDelegate.swift in Sources */,
+				3FCE4E1626FEFEC500E49189 /* Movie.swift in Sources */,
+				3FCE4E2326FF018200E49189 /* Response.swift in Sources */,
 				3FB02AC226FEF5770006EA04 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +461,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z9X27XS2Q8;
 				INFOPLIST_FILE = BoxOffice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -467,6 +480,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z9X27XS2Q8;
 				INFOPLIST_FILE = BoxOffice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
