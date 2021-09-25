@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3FB02AC026FEF5770006EA04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB02ABF26FEF5770006EA04 /* AppDelegate.swift */; };
 		3FB02AC226FEF5770006EA04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB02AC126FEF5770006EA04 /* SceneDelegate.swift */; };
-		3FB02AC426FEF5770006EA04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB02AC326FEF5770006EA04 /* ViewController.swift */; };
+		3FB02AC426FEF5770006EA04 /* MovieListTapBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB02AC326FEF5770006EA04 /* MovieListTapBarController.swift */; };
 		3FB02AC926FEF57B0006EA04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB02AC826FEF57B0006EA04 /* Assets.xcassets */; };
 		3FB02ACC26FEF57B0006EA04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB02ACA26FEF57B0006EA04 /* LaunchScreen.storyboard */; };
 		3FB02AD726FEF57B0006EA04 /* BoxOfficeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB02AD626FEF57B0006EA04 /* BoxOfficeTests.swift */; };
@@ -17,6 +17,9 @@
 		3FCE4E1626FEFEC500E49189 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E1526FEFEC500E49189 /* Movie.swift */; };
 		3FCE4E1E26FF00AD00E49189 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E1D26FF00AD00E49189 /* Comment.swift */; };
 		3FCE4E2326FF018200E49189 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E2226FF018200E49189 /* Response.swift */; };
+		3FCE4E2B26FF02B900E49189 /* MovieListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E2A26FF02B900E49189 /* MovieListTableViewController.swift */; };
+		3FCE4E3326FF02E400E49189 /* MovieListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E3226FF02E400E49189 /* MovieListCollectionViewController.swift */; };
+		3FCE4E3826FF07D100E49189 /* ParssingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E3726FF07D100E49189 /* ParssingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,7 @@
 		3FB02ABC26FEF5770006EA04 /* BoxOffice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxOffice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB02ABF26FEF5770006EA04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FB02AC126FEF5770006EA04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3FB02AC326FEF5770006EA04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FB02AC326FEF5770006EA04 /* MovieListTapBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTapBarController.swift; sourceTree = "<group>"; };
 		3FB02AC826FEF57B0006EA04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FB02ACB26FEF57B0006EA04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FB02ACD26FEF57B0006EA04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +56,9 @@
 		3FCE4E1526FEFEC500E49189 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		3FCE4E1D26FF00AD00E49189 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		3FCE4E2226FF018200E49189 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		3FCE4E2A26FF02B900E49189 /* MovieListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewController.swift; sourceTree = "<group>"; };
+		3FCE4E3226FF02E400E49189 /* MovieListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCollectionViewController.swift; sourceTree = "<group>"; };
+		3FCE4E3726FF07D100E49189 /* ParssingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParssingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +149,9 @@
 			children = (
 				3FB02ABF26FEF5770006EA04 /* AppDelegate.swift */,
 				3FB02AC126FEF5770006EA04 /* SceneDelegate.swift */,
-				3FB02AC326FEF5770006EA04 /* ViewController.swift */,
+				3FB02AC326FEF5770006EA04 /* MovieListTapBarController.swift */,
+				3FCE4E2A26FF02B900E49189 /* MovieListTableViewController.swift */,
+				3FCE4E3226FF02E400E49189 /* MovieListCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 				3FCE4E1526FEFEC500E49189 /* Movie.swift */,
 				3FCE4E1D26FF00AD00E49189 /* Comment.swift */,
 				3FCE4E2226FF018200E49189 /* Response.swift */,
+				3FCE4E3726FF07D100E49189 /* ParssingManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -288,10 +297,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FCE4E1E26FF00AD00E49189 /* Comment.swift in Sources */,
-				3FB02AC426FEF5770006EA04 /* ViewController.swift in Sources */,
+				3FCE4E3326FF02E400E49189 /* MovieListCollectionViewController.swift in Sources */,
+				3FB02AC426FEF5770006EA04 /* MovieListTapBarController.swift in Sources */,
 				3FB02AC026FEF5770006EA04 /* AppDelegate.swift in Sources */,
 				3FCE4E1626FEFEC500E49189 /* Movie.swift in Sources */,
+				3FCE4E2B26FF02B900E49189 /* MovieListTableViewController.swift in Sources */,
 				3FCE4E2326FF018200E49189 /* Response.swift in Sources */,
+				3FCE4E3826FF07D100E49189 /* ParssingManager.swift in Sources */,
 				3FB02AC226FEF5770006EA04 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
