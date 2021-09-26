@@ -9,6 +9,9 @@ import UIKit
 
 class MovieListTabBarController: UITabBarController {
     
+    let movieListTableViewController = MovieListTableViewController()
+    let movieListCollectionViewController = MovieListCollectionViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureChildViewController()
@@ -16,16 +19,16 @@ class MovieListTabBarController: UITabBarController {
     
     private func configureChildViewController() {
         
-        let tableViewNavigationController = UINavigationController(rootViewController: MovieListTableViewController())
-        let collectionViewNavigationController = UINavigationController(rootViewController: MovieListCollectionViewController())
+        let tableViewNavigationController = UINavigationController(rootViewController: movieListTableViewController)
+        let collectionViewNavigationController = UINavigationController(rootViewController: movieListCollectionViewController)
         
         tableViewNavigationController.tabBarItem.image = UIImage(named: "ic_table")
         collectionViewNavigationController.tabBarItem.image = UIImage(named: "ic_collection")
         
         tableViewNavigationController.tabBarItem.title = "Table"
         collectionViewNavigationController.tabBarItem.title = "Collection"
-
-        setViewControllers([tableViewNavigationController,collectionViewNavigationController], animated: true)
+        
+        setViewControllers([tableViewNavigationController,collectionViewNavigationController], animated: false)
     }
 }
 

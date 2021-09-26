@@ -7,23 +7,58 @@
 
 import UIKit
 
-class MovieListTableViewController: UISplitViewController {
-
+final class MovieListTableViewController: UIViewController, RootViewControllerable {
+    
+    var moiveList: [MovieThumbnail] = []
+    private let movieListTableView = MovieListTableView(frame: .zero)
+    private let networkManager = NetworkManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setup()
+        prepareMovieList()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func prepareMovieList() {
+        let model: APIable = GetAPI.lookUpMovieList(orderType: 0, contentType: .jsonData)
+        networkManager.request(apiModel: model) { [self] (result) in
+            print("??")
+            switch result {
+            case .success(let data):
+                guard let parsingData = ParssingManager.decodingModel(data: data, model: MovieList.self) else { return }
+                for movie in parsingData.movies {
+                    moiveList.append(movie)
+                    DispatchQueue.main.async {
+                        self.movieListTableView.movieTableView.reloadData()
+                    }
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
-    */
+    
+    func setup() {
+        self.view = movieListTableView
+        movieListTableView.movieTableView.delegate = self
+        movieListTableView.movieTableView.dataSource = self
+        
+        self.navigationItem.title = "영화 목록"
+    }
+}
 
+extension MovieListTableViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return moiveList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: MovieTableViewCell.identifier) as? MovieTableViewCell else { fatalError() }
+        cell.configure(with: moiveList[indexPath.row])
+        return cell
+    }
+}
+
+extension MovieListTableViewController: UITableViewDelegate {
+    
 }

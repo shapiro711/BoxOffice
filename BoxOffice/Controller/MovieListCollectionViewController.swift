@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MovieListCollectionViewController: UISplitViewController {
+class MovieListCollectionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

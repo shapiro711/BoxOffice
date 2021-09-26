@@ -20,6 +20,17 @@
 		3FCE4E2B26FF02B900E49189 /* MovieListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E2A26FF02B900E49189 /* MovieListTableViewController.swift */; };
 		3FCE4E3326FF02E400E49189 /* MovieListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E3226FF02E400E49189 /* MovieListCollectionViewController.swift */; };
 		3FCE4E3826FF07D100E49189 /* ParssingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E3726FF07D100E49189 /* ParssingManager.swift */; };
+		3FCE4E3E26FF08C800E49189 /* RootViewalbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E3D26FF08C800E49189 /* RootViewalbe.swift */; };
+		3FCE4E4626FF08E500E49189 /* RootViewControllerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E4526FF08E500E49189 /* RootViewControllerable.swift */; };
+		3FCE4E4E26FF094B00E49189 /* MovieListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E4D26FF094B00E49189 /* MovieListTableView.swift */; };
+		3FCE4E5326FF0B7A00E49189 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E5226FF0B7A00E49189 /* MovieTableViewCell.swift */; };
+		3FCE4E59270043A400E49189 /* APIable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E58270043A400E49189 /* APIable.swift */; };
+		3FCE4E612700447100E49189 /* GetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E602700447100E49189 /* GetAPI.swift */; };
+		3FCE4E662700452200E49189 /* PostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E652700452200E49189 /* PostAPI.swift */; };
+		3FCE4E6B2700466700E49189 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E6A2700466700E49189 /* NetworkManager.swift */; };
+		3FCE4E702700480C00E49189 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E6F2700480C00E49189 /* Media.swift */; };
+		3FCE4E7527004D6D00E49189 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E7427004D6D00E49189 /* MovieList.swift */; };
+		3FCE4E7A2700538B00E49189 /* MovieThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE4E792700538B00E49189 /* MovieThumbnail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +70,17 @@
 		3FCE4E2A26FF02B900E49189 /* MovieListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewController.swift; sourceTree = "<group>"; };
 		3FCE4E3226FF02E400E49189 /* MovieListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCollectionViewController.swift; sourceTree = "<group>"; };
 		3FCE4E3726FF07D100E49189 /* ParssingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParssingManager.swift; sourceTree = "<group>"; };
+		3FCE4E3D26FF08C800E49189 /* RootViewalbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewalbe.swift; sourceTree = "<group>"; };
+		3FCE4E4526FF08E500E49189 /* RootViewControllerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerable.swift; sourceTree = "<group>"; };
+		3FCE4E4D26FF094B00E49189 /* MovieListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableView.swift; sourceTree = "<group>"; };
+		3FCE4E5226FF0B7A00E49189 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		3FCE4E58270043A400E49189 /* APIable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIable.swift; sourceTree = "<group>"; };
+		3FCE4E602700447100E49189 /* GetAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAPI.swift; sourceTree = "<group>"; };
+		3FCE4E652700452200E49189 /* PostAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAPI.swift; sourceTree = "<group>"; };
+		3FCE4E6A2700466700E49189 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3FCE4E6F2700480C00E49189 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		3FCE4E7427004D6D00E49189 /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
+		3FCE4E792700538B00E49189 /* MovieThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieThumbnail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +161,10 @@
 		3FB02AF226FEF6F10006EA04 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3FCE4E3C26FF08B000E49189 /* RootView */,
 				3FB02ACA26FEF57B0006EA04 /* LaunchScreen.storyboard */,
+				3FCE4E4D26FF094B00E49189 /* MovieListTableView.swift */,
+				3FCE4E5226FF0B7A00E49189 /* MovieTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,6 +177,7 @@
 				3FB02AC326FEF5770006EA04 /* MovieListTapBarController.swift */,
 				3FCE4E2A26FF02B900E49189 /* MovieListTableViewController.swift */,
 				3FCE4E3226FF02E400E49189 /* MovieListCollectionViewController.swift */,
+				3FCE4E6A2700466700E49189 /* NetworkManager.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -159,12 +185,35 @@
 		3FB02AF426FEF7060006EA04 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3FCE4E572700439000E49189 /* API */,
 				3FCE4E1526FEFEC500E49189 /* Movie.swift */,
 				3FCE4E1D26FF00AD00E49189 /* Comment.swift */,
 				3FCE4E2226FF018200E49189 /* Response.swift */,
 				3FCE4E3726FF07D100E49189 /* ParssingManager.swift */,
+				3FCE4E6F2700480C00E49189 /* Media.swift */,
+				3FCE4E7427004D6D00E49189 /* MovieList.swift */,
+				3FCE4E792700538B00E49189 /* MovieThumbnail.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3FCE4E3C26FF08B000E49189 /* RootView */ = {
+			isa = PBXGroup;
+			children = (
+				3FCE4E3D26FF08C800E49189 /* RootViewalbe.swift */,
+				3FCE4E4526FF08E500E49189 /* RootViewControllerable.swift */,
+			);
+			path = RootView;
+			sourceTree = "<group>";
+		};
+		3FCE4E572700439000E49189 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3FCE4E58270043A400E49189 /* APIable.swift */,
+				3FCE4E602700447100E49189 /* GetAPI.swift */,
+				3FCE4E652700452200E49189 /* PostAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,14 +346,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FCE4E1E26FF00AD00E49189 /* Comment.swift in Sources */,
+				3FCE4E612700447100E49189 /* GetAPI.swift in Sources */,
 				3FCE4E3326FF02E400E49189 /* MovieListCollectionViewController.swift in Sources */,
+				3FCE4E4E26FF094B00E49189 /* MovieListTableView.swift in Sources */,
 				3FB02AC426FEF5770006EA04 /* MovieListTapBarController.swift in Sources */,
+				3FCE4E7A2700538B00E49189 /* MovieThumbnail.swift in Sources */,
 				3FB02AC026FEF5770006EA04 /* AppDelegate.swift in Sources */,
 				3FCE4E1626FEFEC500E49189 /* Movie.swift in Sources */,
 				3FCE4E2B26FF02B900E49189 /* MovieListTableViewController.swift in Sources */,
+				3FCE4E662700452200E49189 /* PostAPI.swift in Sources */,
 				3FCE4E2326FF018200E49189 /* Response.swift in Sources */,
+				3FCE4E6B2700466700E49189 /* NetworkManager.swift in Sources */,
 				3FCE4E3826FF07D100E49189 /* ParssingManager.swift in Sources */,
+				3FCE4E7527004D6D00E49189 /* MovieList.swift in Sources */,
+				3FCE4E3E26FF08C800E49189 /* RootViewalbe.swift in Sources */,
+				3FCE4E59270043A400E49189 /* APIable.swift in Sources */,
+				3FCE4E702700480C00E49189 /* Media.swift in Sources */,
 				3FB02AC226FEF5770006EA04 /* SceneDelegate.swift in Sources */,
+				3FCE4E4626FF08E500E49189 /* RootViewControllerable.swift in Sources */,
+				3FCE4E5326FF0B7A00E49189 /* MovieTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
